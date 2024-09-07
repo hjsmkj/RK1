@@ -1,0 +1,109 @@
+RK1
+Павлова Виталия ИУ8-21
+
+ссылка: https://github.com/Tencent/TscanCode
+
+1. 
+TscanCode
+
+2.
+
+3.
+$ find . -type f | wc -l
+412
+
+4.
+$ du -sh
+66M
+
+5.
+$ find . -type f -iname ".h"-or -iname ".cpp" -or -iname ".c" -or -iname ".hpp" -or -iname ".cxx" -or -iname ".py" -or -iname ".pl" -or -iname ".php" -or -iname ".java" -or -iname ".cs" -or -iname ".rb" -or -iname ".rs" -or -iname ".hs" -exec ls {} |xargs du -abch
+64M	итого
+
+6.
+$ find . -type f -name "*.clang-format" | wc -l
+0
+
+7.
+find . -type d -name "src" | wc -l
+0
+
+8.
+grep -lr socket /home/vitalia/TscanCode
+/home/vitalia/TscanCode/release/mac/tscancode
+/home/vitalia/TscanCode/release/mac/tsclua.mac
+/home/vitalia/TscanCode/release/mac/cfg/posix.cfg
+/home/vitalia/TscanCode/release/mac/cfg/lua_cfg.xml
+/home/vitalia/TscanCode/release/mac/cfg/windows.cfg
+/home/vitalia/TscanCode/release/mac/cfg/gtk.cfg
+/home/vitalia/TscanCode/release/windows/lua/tsclua-core.dll
+/home/vitalia/TscanCode/release/windows/lua/tsclua.exe
+/home/vitalia/TscanCode/release/windows/lua/cfg/lua_cfg.xml
+/home/vitalia/TscanCode/release/linux/TscLua/tsclua
+/home/vitalia/TscanCode/release/linux/TscLua/cfg/lua_cfg.xml
+/home/vitalia/TscanCode/release/linux/TscanCodeV2.14.2395.linux/tscancode
+/home/vitalia/TscanCode/release/linux/TscanCodeV2.14.2395.linux/cfg/posix.cfg
+/home/vitalia/TscanCode/release/linux/TscanCodeV2.14.2395.linux/cfg/windows.cfg
+/home/vitalia/TscanCode/release/linux/TscanCodeV2.14.2395.linux/cfg/gtk.cfg
+/home/vitalia/TscanCode/trunk/lib/checkmemoryleak.cpp
+/home/vitalia/TscanCode/trunk/cfg/posix.cfg
+/home/vitalia/TscanCode/trunk/cfg/windows.cfg
+/home/vitalia/TscanCode/trunk/cfg/gtk.cfg
+итого 19
+
+9.
+$ grep -lr select /home/vitalia/TscanCode
+/home/vitalia/TscanCode/.git/hooks/fsmonitor-watchman.sample
+/home/vitalia/TscanCode/release/mac/TscSharp
+/home/vitalia/TscanCode/release/mac/tsclua.mac
+/home/vitalia/TscanCode/release/mac/cfg/funcTranslation.csv
+/home/vitalia/TscanCode/release/mac/cfg/spellDic.txt
+/home/vitalia/TscanCode/release/mac/cfg/lua_std.cfg
+/home/vitalia/TscanCode/release/mac/cfg/gtk.cfg
+/home/vitalia/TscanCode/release/windows/lua/tsclua-core.dll
+/home/vitalia/TscanCode/release/windows/lua/cfg/funcTranslation.csv
+/home/vitalia/TscanCode/release/windows/lua/cfg/spellDic.txt
+/home/vitalia/TscanCode/release/windows/lua/cfg/lua_std.cfg
+/home/vitalia/TscanCode/release/linux/TscLua/tsclua
+/home/vitalia/TscanCode/release/linux/TscLua/cfg/funcTranslation.csv
+/home/vitalia/TscanCode/release/linux/TscLua/cfg/spellDic.txt
+/home/vitalia/TscanCode/release/linux/TscLua/cfg/lua_std.cfg
+/home/vitalia/TscanCode/release/linux/TscSharpV1.14.667.linux/TscSharp
+/home/vitalia/TscanCode/release/linux/TscanCodeV2.14.2395.linux/cfg/gtk.cfg
+/home/vitalia/TscanCode/trunk/cli/tscexecutor.cpp
+/home/vitalia/TscanCode/trunk/lib/checkother.cpp
+/home/vitalia/TscanCode/trunk/cfg/gtk.cfg
+/home/vitalia/TscanCode/samples/csharp/cs_inefficientlinq.cs
+итого 21
+
+10.
+$ grep -lr -e Microsoft -e Google -e Intel /home/vitalia/TscanCode
+/home/vitalia/TscanCode/release/mac/tscancode
+/home/vitalia/TscanCode/release/mac/cfg/funcTranslation.csv
+/home/vitalia/TscanCode/release/mac/cfg/microsoft_sal.cfg
+/home/vitalia/TscanCode/release/mac/cfg/spellDic.txt
+/home/vitalia/TscanCode/release/windows/lua/cfg/funcTranslation.csv
+/home/vitalia/TscanCode/release/windows/lua/cfg/spellDic.txt
+/home/vitalia/TscanCode/release/linux/TscLua/cfg/funcTranslation.csv
+/home/vitalia/TscanCode/release/linux/TscLua/cfg/spellDic.txt
+/home/vitalia/TscanCode/release/linux/TscanCodeV2.14.2395.linux/tscancode
+/home/vitalia/TscanCode/release/linux/TscanCodeV2.14.2395.linux/cfg/microsoft_sal.cfg
+/home/vitalia/TscanCode/trunk/tscancode.sln
+/home/vitalia/TscanCode/trunk/common/crashhelp.cpp
+/home/vitalia/TscanCode/trunk/cli/cli.vcxproj
+/home/vitalia/TscanCode/trunk/externals/tinyxml/tinyxml2.cpp
+/home/vitalia/TscanCode/trunk/lib/checkio.cpp
+/home/vitalia/TscanCode/trunk/lib/tscancode.vcxproj
+/home/vitalia/TscanCode/trunk/lib/tokenize.h
+/home/vitalia/TscanCode/trunk/lib/tokenize.cpp
+/home/vitalia/TscanCode/trunk/lib/globaltokenizer.cpp
+/home/vitalia/TscanCode/trunk/cfg/microsoft_sal.cfg
+/home/vitalia/TscanCode/.gitignore
+итого 21
+
+11.
+$ find . -type f -name "LICENSE"
+./LICENSE
+
+12.
+такой строки нет
